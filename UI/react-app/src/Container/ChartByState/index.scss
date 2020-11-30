@@ -1,0 +1,66 @@
+.state {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .fileshare-table {
+    .table {
+      margin-bottom: 0px;
+      
+    }
+    .table-striped tbody tr:nth-of-type(odd){
+      background-color: #f3fbf9;
+    }
+    thead {
+      th {
+        position: relative;
+        .icon-upside-down {
+          position: absolute;
+          right: 8px;
+          top: 15px;
+        }
+      }
+    }
+    
+  }
+  .fileshare-table table {
+    background-color: #ffffff;
+  }
+  
+  .ss-pagination-container {
+    background-color: #fff;
+    padding: 15px;
+  }
+  .ss-pagination {
+    margin: 0px;
+    width: fit-content;
+    max-width: 50%;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    .previous,.next{
+      cursor: pointer;
+      margin: 0px 10px;
+      a:focus{
+        outline: 0;
+      }
+    }
+    .ss-pagination-item {
+      color: #b3b3b3;
+      margin: 0px 10px;
+      cursor: pointer;
+      & a:focus{
+        outline: 0 !important;
+      }
+    }
+    .ss-pagination-item-active {
+      border-radius: 4px;
+      background-color: #0065f2;
+      padding: 0px 8px;
+      color: #fff;
+      line-height: 1.6;
+    }
+  }
+}

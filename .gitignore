@@ -1,0 +1,6 @@
+apis/node_modules
+apis/logs
+apis/package-lock.json
+UI/react-app/node_modules
+UI/react-app/yarn.lock
+mongo_data/node_modules

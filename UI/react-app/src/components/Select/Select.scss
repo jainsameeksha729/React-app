@@ -1,0 +1,48 @@
+.ss_select__control:hover,
+.ss_select__control:active,
+.ss_select__control:visited .ss_select__control:focus {
+  border-color: hsl(0, 0%, 80%) !important;
+}
+
+.ss_select__control {
+  box-shadow: none !important;
+  border-color: hsl(0, 0%, 80%) !important;
+}
+
+.ss_select__option--is-selected {
+  background-color: #fff5ec !important;
+  color: #979797 !important;
+}
+
+
+.select_wrapper {
+  position: relative;
+  select {
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  select:focus {
+    outline: 0;
+    background: #fff;
+  }
+}
+
+.select_wrapper::after {
+  font-family: FontAwesome;
+  content: "\f107";
+  font-size: 28px;
+  position: absolute;
+  top: -2px;
+  right: 18px;
+  color: #6d6d6d;
+  pointer-events: none;
+  opacity: 0.54;
+}
+  
