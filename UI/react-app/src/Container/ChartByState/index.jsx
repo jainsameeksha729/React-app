@@ -10,7 +10,6 @@ import Pagination from "react-paginate";
 import "chartjs-plugin-labels";
 
 import { withRouter, Link, NavLink } from "react-router-dom";
-const perPage = 5;
 const options = {
   responsive: true,
   maintainAspectRatio: false,
@@ -166,7 +165,7 @@ const ChartByState = (props) => {
         setCanvasClicked(true);
         setCollegeByStates(data.result);
         setState(label);
-        setPageCount(parseInt(data.total) / perPage);
+        setPageCount(parseInt(data.total) / data.perPage);
         console.log("statessss", data.result);
       });
     }

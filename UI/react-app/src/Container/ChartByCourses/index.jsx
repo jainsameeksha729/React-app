@@ -136,7 +136,7 @@ const ChartByState = (props) => {
         setCanvasClicked(true);
         setCollegeByStates(data.result);
         setState(label);
-        setPageCount(parseInt(data.total) / perPage);
+        setPageCount(parseInt(data.total) / data.perPage);
         console.log("statessss", data.result);
       });
     }
